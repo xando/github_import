@@ -10,4 +10,8 @@ Import modules from Github
     print requests.get('http://google.com')
 
 
+Requirements ;)
+===============
+
+ * git
 
