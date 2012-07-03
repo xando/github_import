@@ -1,6 +1,5 @@
 import github_import
 
-from github.com.jqb.userhome import userhome
-from github.com.jqb import boilerplate
+from github.com.kennethreitz.requests import requests
 
-import ipdb; ipdb.set_trace()
+print requests.get('http://google.com')
