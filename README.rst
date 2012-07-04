@@ -10,8 +10,16 @@ Import modules from Github
     print requests.get('http://google.com')
 
 
-Requirements ;)
-===============
+Requirements
+============
 
  * git
 
+
+Why
+===
+
+Because it's possible and to show flexibility of Python. 
+
+
+Don't use this on production, please ;)
