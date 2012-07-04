@@ -13,7 +13,7 @@ Import modules from Github
 Requirements
 ============
 
- * git
+* git
 
 
 Why
