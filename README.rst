@@ -19,7 +19,7 @@ Requirements
 Why
 ===
 
-Because it's possible and to shows flexibility of Python. 
+Because it's possible and to show flexibility of Python. 
 
 
 Don't use this on production, please ;)
