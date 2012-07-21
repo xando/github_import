@@ -1,5 +1,5 @@
-Import modules from Github
---------------------------
+Import modules from Github (PEP 302)
+------------------------------------
 
 ::
 
