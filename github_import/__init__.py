@@ -3,7 +3,6 @@ import imp
 import os
 import new
 import subprocess
-import shlex
 
 
 class ImportHook(object):
@@ -32,14 +31,15 @@ class ImportHook(object):
                 os.mkdir(repo_root)
 
             if os.path.exists(repo_dir):
-                subprocess.call(shlex.split(
-                    "cd %s && git pull -q" % repo_dir
-                ))
+                subprocess.call(
+                    "cd %s && git pull -q" % repo_dir, shell=True
+                )
             else:
-                subprocess.call(shlex.split(
+                subprocess.call(
                     "git clone git://github.com/%s/%s.git %s -q"
-                    % (user, module_name, repo_dir)
-                ))
+                    % (user, module_name, repo_dir),
+                    shell=True
+                )
             sys.path.insert(0, repo_root)
 
             try:
